@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Festividades de México</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="intro">🇲🇽 Festividades de México</div>
+
+<header>
+  <h1>🇲🇽 Festividades de México</h1>
+  <nav>
+    <a href="#matematicas">📊 Matemáticas</a>
+    <a href="#sociales">🌎 Sociales</a>
+    <a href="#ingles">🇺🇸 Inglés</a>
+    <a href="#lengua">✍️ Lengua</a>
+    <a href="#ciencias">🔬 Ciencias</a>
+  </nav>
+  <button onclick="toggleDark()">🌙</button>
+  <button onclick="toggleMusic()">🎵</button>
+</header>
+
+<audio id="music" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
+</audio>
+
+<section class="banner">
+  <h2>Explora las festividades mexicanas desde distintas áreas del conocimiento</h2>
+</section>
+
+<section id="matematicas" class="section fade">
+<h2>📊 Matemáticas</h2>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604423043493-9199bb2d8e77">
+<p>Día de Muertos: proporciones y costos.</p>
+<button onclick="toggle('m1')">Más</button>
+<div id="m1" class="hidden">
+<p>Pan: $80 - Velas: $50</p>
+</div>
+</div>
+
+<div class="card">
+<h3>🎮 Quiz</h3>
+<p>$1000 - $200 = ?</p>
+<input id="quiz">
+<button onclick="quiz()">Responder</button>
+<p id="resultado"></p>
+</div>
+
+</section>
+
+<section id="sociales" class="section fade">
+<h2>🌎 Sociales</h2>
+<div class="card"><img src="https://images.unsplash.com/photo-1590608897129-79da98d1598b"><p>Independencia</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1584555684040-567c5ff8d3b2"><p>Virgen de Guadalupe</p></div>
+</section>
+
+<footer>✨ Proyecto por ANGEL CRUZ</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
